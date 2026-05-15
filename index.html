@@ -1,1 +1,42 @@
-// Begin
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSUN Map Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSUN Map Guessing Game</h1>
+        <p>Double click on the map where you think the location is.</p>
+    </header>
+
+    <main>
+        <section class="game-panel">
+            <h2 id="location-prompt">Loading...</h2>
+
+            <div class="stats">
+                <p>Question: <span id="question-number">1</span> / 5</p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Timer: <span id="timer">00:00</span></p>
+                <p>Best Time: <span id="high-score">None</span></p>
+            </div>
+
+            <p id="message">Double click your answer on the map.</p>
+
+            <button id="next-button">Next Location</button>
+            <button id="restart-button">Restart Game</button>
+        </section>
+
+        <section id="map"></section>
+    </main>
+
+    <script src="script.js"></script>
+
+    
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHkAakJxUS3awnzTr-p6aycjp8i9c0ePY&libraries=geometry&callback=initMap">
+    </script>
+</body>
+</html>
