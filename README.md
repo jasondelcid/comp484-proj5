@@ -29,3 +29,5 @@ This project challenges users to identify important CSUN campus locations by dou
 - Google Maps JavaScript API
 
 ## GitHub Pages Link
+
+https://jasondelcid.github.io/comp484-proj5/
